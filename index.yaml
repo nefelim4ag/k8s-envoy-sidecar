@@ -3,6 +3,16 @@ entries:
   k8s-envoy-sidecar:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2022-06-27T22:28:32.751384334Z"
+    description: A Helm chart for Kubernetes
+    digest: 1d00ecbce86149a47792121b1888e54ff637fac8cb154a948083fbac65301387
+    name: k8s-envoy-sidecar
+    type: application
+    urls:
+    - https://github.com/Nefelim4ag/k8s-envoy-sidecar/releases/download/k8s-envoy-sidecar-0.8.0/k8s-envoy-sidecar-0.8.0.tgz
+    version: 0.8.0
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2022-06-27T22:27:50.516635811Z"
     description: A Helm chart for Kubernetes
     digest: a381d979cff81468d52ba76091c9b021a58aa70c1678b1bfb22e91426a3ff412
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/Nefelim4ag/k8s-envoy-sidecar/releases/download/k8s-envoy-sidecar-0.7.8/k8s-envoy-sidecar-0.7.8.tgz
     version: 0.7.8
-generated: "2022-06-27T22:27:50.516640911Z"
+generated: "2022-06-27T22:28:32.751392234Z"
