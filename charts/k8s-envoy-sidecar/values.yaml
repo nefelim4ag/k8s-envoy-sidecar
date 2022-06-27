@@ -1,5 +1,5 @@
 envoy:
-  image: ghcr.io/nefelim4ag/k8s-ssh-bastion/envoy:latest
+  image: ghcr.io/nefelim4ag/k8s-envoy-sidecar:latest
   deployment:
     enabled: true
   monitoring:
