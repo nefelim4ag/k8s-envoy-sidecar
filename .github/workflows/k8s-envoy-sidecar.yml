@@ -1,9 +1,13 @@
 name: Release Chart
 
+# on:
+#   push:
+#     tags:
+#       - '*'
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - main
 
 jobs:
   release:
