@@ -1,5 +1,5 @@
 envoy:
-  image: public.ecr.aws/xflow-ltd/envoy:v1.22-latest
+  image: ghcr.io/nefelim4ag/k8s-ssh-bastion/envoy:latest
   deployment:
     enabled: true
   monitoring:
