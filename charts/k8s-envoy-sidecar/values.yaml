@@ -1,0 +1,47 @@
+envoy:
+  image: public.ecr.aws/xflow-ltd/envoy:v1.22-latest
+  deployment:
+    enabled: true
+  monitoring:
+    enabled: true
+  proxy:
+    null
+    # keydb:
+    #   search:
+    #     namespace: project
+    #     service: keydb-headless
+    #   dport: 6379
+    #   lport: 6379
+    # mysql:
+    #   hosts: 8.8.8.8
+    #   dport: 3306
+    #   lport: 3306
+    # clickhouse-tls:
+    #   hosts: chi.example.com
+    #   dport: 443
+    #   lport: 80
+    #   sni: chi.example.com
+    # go-api:
+    #   hosts: http.example.com
+    #   dport: 3000
+    #   lport: 3000
+    #   type: http
+  resources:
+    requests:
+      cpu: 30m
+      memory: 32Mi
+
+service:
+  annotations: {}
+  type: ClusterIP
+  clusterIP: {}
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: http
+
+hostNetwork: false
+dnsConfig: {}
+
+minReadySeconds: 10
